@@ -122,7 +122,12 @@ with gr.Blocks() as demo:
     question_input = gr.Textbox(label="Ask a Question (optional)", placeholder="Enter your question here...")
     output = gr.Textbox(label="Analysis Result", lines=20)
 
+
+
     analyze_btn = gr.Button("🔍 Analyze Document")
     analyze_btn.click(fn=analyze_doc, inputs=[doc_id_input, question_input], outputs=output)
 
 demo.launch(share=True)
+
+
+# Example Doc_id = 1j9Iq644BOmpzUibxBIFxmV2fif4vGk8NXi0SCjfdfeg
